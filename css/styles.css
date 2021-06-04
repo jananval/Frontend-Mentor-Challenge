@@ -9,6 +9,7 @@
 body {
   color: hsl(0, 0%, 95%);
   padding: 25vh 0;
+  display: block;
 }
 
 p {
@@ -31,7 +32,8 @@ h1 {
 .container {
   display: flex;
   height: 50vh;
-  border-radius: 50px;
+  border-radius: 10px;
+  overflow: hidden;
   margin: auto;
   width: 50%;
 }
@@ -92,13 +94,31 @@ img {
   color: hsl(179, 100%, 13%);
 }
 
+/* ATTRIBUTION */
+.attribution {
+  position: relative;
+  width: 40vw;
+  margin: 2em auto;
+  text-align: center;
+  color: black;
+  font-family: "Lexend Deca";
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(31, 77%, 52%);
+}
+
 @media (max-width: 74em) {
   body {
     padding: 0;
+    overflow: scroll;
   }
 
   .container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
   }
 
   .container-card {
