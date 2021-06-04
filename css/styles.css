@@ -1,0 +1,117 @@
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  color: hsl(0, 0%, 95%);
+  padding: 25vh 0;
+}
+
+p {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 0.7em;
+  line-height: 1.7em;
+  padding-right: 2.5em;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 0.8em 0;
+}
+
+.container {
+  display: flex;
+  height: 50vh;
+  border-radius: 50px;
+  margin: auto;
+  width: 50%;
+}
+
+.container-card {
+  display: block;
+  padding: 2em;
+  position: relative;
+}
+
+img {
+  height: 1.9em;
+}
+
+.bright {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.blue {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.dark {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.button {
+  position: absolute;
+  bottom: 3em;
+  background-color: hsl(0, 0%, 95%);
+  text-align: center;
+  border: 1px hsl(0, 0%, 95%) solid;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: transparent;
+}
+
+.button:hover p {
+  color: hsl(0, 0%, 95%);
+}
+
+.button p {
+  margin: auto;
+  padding-right: 0;
+  padding: 0.5em 2em;
+}
+
+.text-blue {
+  color: hsl(184, 100%, 22%);
+}
+.text-bright {
+  color: hsl(31, 77%, 52%);
+}
+.text-dark {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 74em) {
+  body {
+    padding: 0;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .container-card {
+    padding: 1em 2em;
+    height: 80%;
+  }
+
+  .button {
+    bottom: 1.8em;
+  }
+
+  p {
+    font-size: 300;
+    padding-right: 0;
+  }
+}
